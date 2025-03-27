@@ -14,7 +14,9 @@ contract DataLocation{
         _f(arr, map, myStructs[1]);
 
         MyStruct storage myStruct = myStructs[1];
+        myStruct.foo = 42;
         MyStruct memory myMenStruct = MyStruct(0);
+        myMenStruct.foo = 41;
     }
 
     function _f(
